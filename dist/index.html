@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Small Business - Start Bootstrap Template</title>
+        <title>Edelweiss Frisør</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/logo_uten.png" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -15,14 +15,16 @@
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container px-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="navbar-brand" href="#forside">
+                    <img src="assets/logo_uten.png" alt="Edelweiss Frisør" style="height: 40px" />
+                    <img src="assets/tekst1.png" alt="Edelweiss Frisør" style="height: 40px" />
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#forside">FORSIDE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#prisliste">PRISLISTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#info">INFO</a></li>
                     </ul>
                 </div>
             </div>
@@ -30,56 +32,245 @@
         <!-- Page Content-->
         <div class="container px-4 px-lg-5">
             <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="https://dummyimage.com/900x400/dee2e6/6c757d.jpg" alt="..." /></div>
+            <div class="row gx-4 gx-lg-5 align-items-center my-5" id="forside">
+                <div class="col-lg-7"><img class="img-fluid mb-4 mb-lg-0" src="assets/salong_jpg/IMG_9859.jpg" alt="Salongbilde" /></div>
                 <div class="col-lg-5">
-                    <h1 class="font-weight-light">Business Name or Tagline</h1>
-                    <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                    <a class="btn btn-primary" href="#!">Call to Action!</a>
+                    <!-- Gull linje og "Om oss"-->
+                    <div class="d-flex align-items-center mb-2">
+                        <span style="display: inline-block; width: 40px; height: 3px; background: #bfa046; margin-right: 16px"></span>
+                        <span class="text-uppercase fw-bold" style="color: #bfa046; letter-spacing: 1px">Om oss</span>
+                    </div>
+                    <h1 class="mb-3 fw-bold" style="font-size: 2.8rem">Velkommen til oss</h1>
+                    <p class="fst-italic mb-3">
+                        Edelweiss frisør ble etablert, i Randheim av Elisabeth Schjetne.
+                        <br />
+                        Dette er en enaa dfa sdf adf adf .
+                    </p>
+                    <p class="mb-3">Vi tilbyr god faglig kompetanse i begge fagbrev, og en salong der du skal føle trygghet i klipp og fargeteknikker, om det er til hverdag eller fest.</p>
+                    <div class="d-flex align-items-start mb-3">
+                        <span style="display: inline-block; width: 3px; height: 40px; background: #bfa046; margin-right: 16px"></span>
+                        <p class="mb-0">Stikk innom da vel, eller ring på oss når du trenger litt råd om riktig og god hårpleie.</p>
+                    </div>
                 </div>
             </div>
             <!-- Call to Action-->
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div>
+            <div class="card my-5 py-5 px-4 text-center shadow-lg" style="background: linear-gradient(120deg, #bfa046 0%, #6c757d 100%); border: none">
+                <div class="card-body">
+                    <h3 class="mb-3 text-white" style="font-size: 2.2rem; letter-spacing: 1px">Bestill time hos oss!</h3>
+                    <p class="text-white mb-4" style="font-size: 1.15rem">Vi hjelper deg gjerne med råd og timebestilling – ta kontakt eller kom innom salongen.</p>
+                    <a class="btn btn-lg fw-bold" href="tel:+4790032240" style="background: #fff; color: #6c757d; border: none; padding: 16px 40px; font-size: 1.3rem; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); transition: background 0.2s; font-weight: 700; letter-spacing: 1px" onmouseover="this.style.background='#343a40';this.style.color='#fff';" onmouseout="this.style.background='#fff';this.style.color='#6c757d';">Ring oss her</a>
+                    <a class="btn btn-lg fw-bold" href="https://timma.no/salong/edelweiss-frisor" style="background: #fff; color: #6c757d; border: none; padding: 16px 40px; font-size: 1.3rem; box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1); transition: background 0.2s" onmouseover="this.style.background='#bfa046';this.style.color='#fff';" onmouseout="this.style.background='#fff';this.style.color='#6c757d';">Bestill time her</a>
+                </div>
             </div>
             <!-- Content Row-->
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card One</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+            <section class="my-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Frisyrer vi tilbyr</h2>
+                    <div class="row gx-4 gy-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img class="card-img-top" src="assets/frisyre_jpg/IMG_0006.jpg" alt="Kort damefrisyre" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Kort damefrisyre</h5>
+                                    <p class="card-text">Moderne og klassisk kort frisyre til dame.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img class="card-img-top" src="assets/frisyre_jpg/IMG_0060.jpg" alt="Langt hår med bølger" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Langt hår med bølger</h5>
+                                    <p class="card-text">Naturlige bølger og volum for langt hår.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 shadow-sm">
+                                <img class="card-img-top" src="assets/frisyre_jpg/IMG_0097.jpg" alt="Herreklipp" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Herreklipp</h5>
+                                    <p class="card-text">Klassisk og moderne klipp for menn.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card Two</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+            </section>
+            <!-- Prisliste Section-->
+            <section class="prisliste my-5" id="prisliste">
+                <div class="container">
+                    <h1 class="text-center prisliste-tittel">PRISLISTE</h1>
+                    <h5 class="text-center mt-4 font-weight-bold">Avbestilling må gjøres minst 24 timer før, om ikke blir timen fakturert 50% av behandlingen</h5>
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span>Klipp</span>
+                                    <span class="float-end">890,- / 990,-</span>
+                                </li>
+                                <li>
+                                    <span>Barn</span>
+                                    <span class="float-end">650,-</span>
+                                </li>
+                                <li>
+                                    <span>Ungdom</span>
+                                    <span class="float-end">750,-</span>
+                                    <br />
+                                    <small class="text-muted">(inkludert vask og føn)</small>
+                                </li>
+                                <li class="mt-3">
+                                    <span>Ettervekst farge</span>
+                                    <span class="float-end">1 550,- / 1 650,-</span>
+                                </li>
+                                <li>
+                                    <span>Helfarge</span>
+                                    <span class="float-end">1 950,- / 2 050,-</span>
+                                    <br />
+                                    <small class="text-muted">(Pris varierer etter mengde farge(ml) / tykkelse av hår)</small>
+                                </li>
+                                <li class="mt-3">
+                                    <span>Foliestriper ettervekst</span>
+                                    <span class="float-end">fra 2550,-</span>
+                                </li>
+                                <li>
+                                    <span>Foliestriper hele håret</span>
+                                    <span class="float-end">fra 3550,-</span>
+                                    <br />
+                                    <small class="text-muted">(Prisene er veiledende og kan variere ut i fra produktmengde og tid)</small>
+                                </li>
+                                <li class="mt-3">
+                                    <span>Gloss</span>
+                                    <span class="float-end">650,- / 950,-</span>
+                                </li>
+                                <li>
+                                    <span>Hårkur</span>
+                                    <span class="float-end">350,-</span>
+                                    <br />
+                                    <small class="text-muted">med massasje</small>
+                                    <span class="float-end">550,-</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span>Vask eller styling</span>
+                                    <span class="float-end">250,- / 400,-</span>
+                                </li>
+                                <li>
+                                    <span>Vask og føn</span>
+                                    <span class="float-end">550,-</span>
+                                </li>
+                                <li class="mt-3">
+                                    <span>Farging</span>
+                                    <span class="float-end">350,-</span>
+                                    <br />
+                                    <small class="text-muted">av vipper</small>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <span class="float-end">300,-</span>
+                                    <br />
+                                    <small class="text-muted">av bryn</small>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <span class="float-end">500,-</span>
+                                    <br />
+                                    <small class="text-muted">av vipper + bryn</small>
+                                </li>
+                                <li class="mt-3">
+                                    <span>Strukturendring</span>
+                                    <span class="float-end">2 050,-</span>
+                                </li>
+                                <li>
+                                    <span>Oppsetting pr 1/2 time</span>
+                                    <span class="float-end">550,-</span>
+                                </li>
+                                <li>
+                                    <span>Brudepynt pr time</span>
+                                    <span class="float-end">1 300,-</span>
+                                </li>
+                                <li class="mt-3">
+                                    <span>Lærling</span>
+                                    <span class="float-end">Klipp 490,- / 590,-</span>
+                                    <br />
+                                    <small class="text-muted">Barn (inntil 12 år) 300,-</small>
+                                    <br />
+                                    <small class="text-muted">Kjemiske Behandlinger 50% rabatt</small>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card Three</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">More Info</a></div>
-                    </div>
-                </div>
-            </div>
+            </section>
+            <!-- Frisyrer vi tilbyr Section-->
         </div>
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="text-white mb-4 text-uppercase" style="letter-spacing: 2px">KONTAKT</h4>
+                        <dl class="row">
+                            <dt class="col-sm-3 text-white fw-bold">besøk</dt>
+                            <dd class="col-sm-9"><a class="text-white" href="https://maps.google.com/?q=sommerveita+7011+trondheim" target="_blank">Ranheimsveien 165 V/ Romantica, 7055 Ranheim</a></dd>
+                            <dt class="col-sm-3 text-white fw-bold">ring</dt>
+                            <dd class="col-sm-9"><a class="text-white" href="tel:+4773505051">+47 90 03 22 40</a></dd>
+                            <dt class="col-sm-3 text-white fw-bold">skriv</dt>
+                            <dd class="col-sm-9"><a class="text-white" href="mailto:ciao@salottotrondheim.no">ranheimfrisør@gmail.no</a></dd>
+                            <dt class="col-sm-3 text-white fw-bold">åpent</dt>
+                            <dd class="col-sm-9">
+                                <table class="text-white">
+                                    <tr>
+                                        <td>mandag</td>
+                                        <td class="pl-3">10:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>tirsdag</td>
+                                        <td class="pl-3">10:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>onsdag</td>
+                                        <td class="pl-3">10:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>torsdag</td>
+                                        <td class="pl-3">10:00 - 19:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>fredag</td>
+                                        <td class="pl-3">10:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>lørdag</td>
+                                        <td class="pl-3">10:00 - 16:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>søndag</td>
+                                        <td class="pl-3">stengt</td>
+                                    </tr>
+                                </table>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-4 text-center" id="info">
+                        <h4 class="text-white mb-4 text-uppercase" style="letter-spacing: 2px">FØLG OSS</h4>
+                        <a href="https://facebook.com" target="_blank" style="display: inline-block; margin: 0 10px"><img src="assets/facebook.svg" alt="Facebook" style="width: 48px; height: 48px; background: #888; border-radius: 50%; padding: 7px" /></a>
+                        <a href="https://instagram.com" target="_blank" style="display: inline-block; margin: 0 10px"><img src="assets/instagram.svg" alt="Instagram" style="width: 48px; height: 48px; background: #888; border-radius: 50%; padding: 7px" /></a>
+                    </div>
+                </div>
+            </div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
+    <style>
+        * {
+            border-radius: 0 !important;
+        }
+    </style>
 </html>
