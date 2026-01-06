@@ -8,10 +8,10 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Small Business - Start Bootstrap Template
+        title Edelweiss Frisør
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/logo_uten.png')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -21,76 +21,173 @@ html(lang='en')
         // Responsive navbar
         nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
             .container.px-5
-                a.navbar-brand(href='#!') Start Bootstrap
+                a.navbar-brand(href='#forside') 
+                    img(src='assets/logo_uten.png', alt='Edelweiss Frisør', style='height:30px;')
+                    img(src='assets/tekst1.png', alt='Edelweiss Frisør', style='height:30px;')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarSupportedContent.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.mb-2.mb-lg-0
                         li.nav-item
-                            a.nav-link.active(aria-current='page', href='#!') Home
+                            a.nav-link.active(aria-current='page', href='#forside') FORSIDE
                         li.nav-item
-                            a.nav-link(href='#!') About
+                            a.nav-link(href='#info') INFO 
                         li.nav-item
-                            a.nav-link(href='#!') Contact
-                        li.nav-item
-                            a.nav-link(href='#!') Services
+                            a.nav-link(href='https://timma.no/salong/edelweiss-frisor') BESTILL TIME 
 
         // Page Content
         .container.px-4.px-lg-5
 
             // Heading Row
-            .row.gx-4.gx-lg-5.align-items-center.my-5
+            .row.gx-4.gx-lg-5.align-items-center.my-5(id="forside")
                 .col-lg-7
-                    img.img-fluid.rounded.mb-4.mb-lg-0(src='https://dummyimage.com/900x400/dee2e6/6c757d.jpg', alt='...')
-
+                    img.img-fluid.mb-4.mb-lg-0(src='assets/salong_jpg/IMG_9859.jpg', alt='Salongbilde')
                 .col-lg-5
-                    h1.font-weight-light Business Name or Tagline
-                    p
-                        | This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!
-                    a.btn.btn-primary(href='#!') Call to Action!
+                    // Gull linje og "Om oss"
+                    .d-flex.align-items-center.mb-2
+                        span(style="display:inline-block;width:40px;height:3px;background:#bfa046;margin-right:16px;")
+                        span.text-uppercase.fw-bold(style="color:#bfa046;letter-spacing:1px;") Kvalitet & Erfaring
+                    h1.mb-3.fw-bold(style="font-size:2.8rem;") Velkommen til Edelweiss frisør
+                    p.mb-3
+                    //- .d-flex.align-items-start.mb-3
+                    //-     span(style="display:inline-block;width:3px;height:40px;background:#bfa046;margin-right:16px;")
+                    //-     p.mb-0
+                    //-         | Edelweiss frisør ble grunnlagt på Ranheim av meg, Elisabeth Schjetne, tidlig i 2025. <br>Salongen ligger sentralt til på Ranheimsveien 165, V/ Romantica, og er et sted hvor du alltid vil føle deg velkommen.
+                    .d-flex.align-items-start.mb-4
+                        span(style="display:inline-block;width:4px;height:60px;background:#bfa046;margin-right:20px; flex-shrink: 0;")
+                        p.lead.fw-normal.text-dark(style="font-style: italic;")
+                            | "Med over 30 års erfaring og mesterbrev, sørger jeg for at du alltid er i trygge hender, enten du ønsker en klassisk klipp eller moderne fargeteknikker."
+                    .d-flex.align-items-start.mb-4
+                        p.mb-4.text-muted(style="line-height: 1.7;")
+                            | Edelweiss Frisør ble etablert på Ranheim tidlig i 2025 av meg Elisabeth Schjetne. Salongen ligger sentralt til i Ranheimsveien 165 (v/ Romantica), og er skapt for å være et sted hvor du kan senke skuldrene og nyte en profesjonell behandling i varme omgivelser. <br><br>
+                                                
+                            | Jeg brenner for faget og holder oss oppdatert på de nyeste trendene for både hverdag og fest. Ta gjerne turen innom for en prat, eller ring meg direkte for personlig rådgivning om hårpleie og styling.
+        
+                            
+                    //- .d-flex.align-items-start.mb-3
+                    //-     span(style="display:inline-block;width:3px;height:40px;background:#bfa046;margin-right:16px;")
+                    //-     p.mb-0
+                    //-         | Hos Edelweiss frisør kan du føle deg trygg på både klipp og fargeteknikker – enten det er til hverdags eller fest. Med over 30 års erfaring og mesterbrev kan du forvente et resultat av høy kvalitet. <br>Ta gjerne turen innom, eller ring meg for råd om hårpleie og styling.
 
-            // Call to Action
-            .card.text-white.bg-secondary.my-5.py-4.text-center
+
+            //- // Call to Action
+            //- .card.my-5.py-5.px-4.text-center.shadow-lg(style="background: linear-gradient(120deg, #bfa046 0%, #6c757d 100%); border: none;")
+            //-     .card-body
+            //-         h3.mb-3.text-white(style="font-size:2.2rem;letter-spacing:1px;") Bestill time hos meg!
+            //-         p.text-white.mb-4(style="font-size:1.15rem;") Jeg hjelper deg gjerne med råd og timebestilling – ta kontakt eller kom innom salongen. <br>  Prisene finner du ved å trykke på bestill time.
+            //-         a.btn.btn-lg.fw-bold(
+            //-             href="tel:+4790032240",
+            //-             style="background:#fff;color:#6c757d;border:none;padding:16px 40px;font-size:1.3rem;box-shadow:0 4px 24px rgba(0,0,0,0.10);transition:background 0.2s;font-weight:700;letter-spacing:1px;"
+            //-             onmouseover="this.style.background='#343a40';this.style.color='#fff';"
+            //-             onmouseout="this.style.background='#fff';this.style.color='#6c757d';"
+            //-         ) Ring oss her
+            //-         a.btn.btn-lg.fw-bold(
+            //-             href="https://timma.no/salong/edelweiss-frisor",
+            //-             style="background:#fff;color:#6c757d;border:none;padding:16px 40px;font-size:1.3rem;box-shadow:0 4px 24px rgba(0,0,0,0.10);transition:background 0.2s;"
+            //-             onmouseover="this.style.background='#bfa046';this.style.color='#fff';"
+            //-             onmouseout="this.style.background='#fff';this.style.color='#6c757d';"
+            //-         ) Bestill time her
+
+            // Call to Action – Modernisert
+            .card.my-5.py-5.px-4.text-center.shadow-lg.rounded-4(style="background: linear-gradient(135deg, #fefefe 0%, #e9ecef 100%); border: none; box-shadow: 0 8px 30px rgba(0,0,0,0.1);")
                 .card-body
-                    p.text-white.m-0
-                        | This call to action card is a great place to showcase some important information or display a clever tagline!
+                    h3.mb-3.text-dark(style="font-size:2.2rem;letter-spacing:1px;font-weight:700;") Bestill time hos meg!
+                    p.text-secondary.mb-4(style="font-size:1.15rem; line-height:1.6;") Jeg hjelper deg gjerne med råd og timebestilling – ta kontakt eller kom innom salongen. <br>Prisene finner du ved å trykke på bestill time.
+                    .d-flex.justify-content-center.flex-wrap.gap-3
+                        a.btn.btn-lg.fw-bold.rounded-pill(
+                            href="tel:+4790032240",
+                            style="background:#bfa046;color:#fff;border:none;padding:14px 36px;font-size:1.2rem;transition:all 0.3s;"
+                            onmouseover="this.style.background='#a88632';"
+                            onmouseout="this.style.background='#bfa046';"
+                        ) Ring oss her
+                        a.btn.btn-lg.fw-bold.rounded-pill(
+                            href="https://timma.no/salong/edelweiss-frisor",
+                            style="background:#6c757d;color:#fff;border:none;padding:14px 36px;font-size:1.2rem;transition:all 0.3s;"
+                            onmouseover="this.style.background='#495057';"
+                            onmouseout="this.style.background='#6c757d';"
+                        ) Bestill time her
+
 
             // Content Row
-            .row.gx-4.gx-lg-5
-                .col-md-4.mb-5
-                    .card.h-100
-                        .card-body
-                            h2.card-title Card One
-                            p.card-text
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.
-                        .card-footer
-                            a.btn.btn-primary.btn-sm(href='#!') More Info
-
-                .col-md-4.mb-5
-                    .card.h-100
-                        .card-body
-                            h2.card-title Card Two
-                            p.card-text
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.
-                        .card-footer
-                            a.btn.btn-primary.btn-sm(href='#!') More Info
-
-                .col-md-4.mb-5
-                    .card.h-100
-                        .card-body
-                            h2.card-title Card Three
-                            p.card-text
-                                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.
-                        .card-footer
-                            a.btn.btn-primary.btn-sm(href='#!') More Info
+    
+            section.my-5
+                .container
+                    h2.text-center.mb-4 Jeg tilbyr en rekke frisyrer, her er noen eksempler
+                    .row.gx-4.gy-4
+                        .col-md-4
+                            .card.h-100.shadow-sm
+                                img.card-img-top(src="assets/frisyre_jpg/IMG_0097.jpg", alt="Kort damefrisyre")
+                                .card-body
+                                    h5.card-title Kort damefrisyre
+                                    p.card-text Moderne og klassisk kort frisyre til dame.
+                        .col-md-4
+                            .card.h-100.shadow-sm
+                                img.card-img-top(src="assets/frisyre_jpg/IMG_0060.jpg", alt="Langt hår med bølger")
+                                .card-body
+                                    h5.card-title Langt hår med bølger
+                                    p.card-text Naturlige bølger og volum for langt hår.
+                        .col-md-4
+                            .card.h-100.shadow-sm
+                                img.card-img-top(src="assets/frisyre_jpg/IMG_0097.jpg", alt="Herreklipp")
+                                .card-body
+                                    h5.card-title Herreklipp
+                                    p.card-text Klassisk og moderne klipp for menn. 
+        
+            
 
         // Footer
         footer.py-5.bg-dark
-            .container.px-4.px-lg-5
-                p.m-0.text-center.text-white Copyright &copy; Your Website 2023
+            .container
+                .row
+                    .col-md-8
+                        h4.text-white.mb-4.text-uppercase(style="letter-spacing:2px;") KONTAKT
+                        dl.row
+                            dt.col-sm-3.text-white.fw-bold Besøk
+                            dd.col-sm-9
+                                a.text-white(href="https://www.google.com/maps/place/Ranheimsvegen+165,+7055+Ranheim/@63.4281996,10.5194512,19z/data=!3m1!4b1!4m6!3m5!1s0x466d307d3c509fb9:0x94f9cb9275fa5f5!8m2!3d63.4281996!4d10.5194512!16s%2Fg%2F11c1j_gxwv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank") Ranheimsveien 165 V/ Romantica, 7055 Ranheim 
+                            dt.col-sm-3.text-white.fw-bold Ring
+                            dd.col-sm-9
+                                a.text-white(href="tel:+4773505051") +47 90 03 22 40
+                            dt.col-sm-3.text-white.fw-bold Skriv
+                            dd.col-sm-9
+                                a.text-white(href="mailto:ciao@salottotrondheim.no") ranheimfrisør@gmail.no
+                            dt.col-sm-3.text-white.fw-bold Åpent
+                            dd.col-sm-9
+                                table.text-white
+                                    tr
+                                        td mandag
+                                        td.pl-3 10:00 - 18:00
+                                    tr
+                                        td tirsdag
+                                        td.pl-3 10:00 - 18:00
+                                    tr
+                                        td onsdag
+                                        td.pl-3 10:00 - 18:00
+                                    tr
+                                        td torsdag
+                                        td.pl-3 10:00 - 19:00
+                                    tr
+                                        td fredag
+                                        td.pl-3 10:00 - 18:00
+                                    tr
+                                        td lørdag
+                                        td.pl-3 10:00 - 16:00
+                                    tr
+                                        td søndag
+                                        td.pl-3 stengt
+                    .col-md-4.text-center(id="info")
+                        h4.text-white.mb-4.text-uppercase(style="letter-spacing:2px;") FØLG HER
+                        a(href="https://www.facebook.com/profile.php?id=61574108447884#", target="_blank", style="display:inline-block;margin:0 10px;")
+                            img(src="assets/facebook-1-svgrepo-com.svg", alt="Facebook", style="width:48px;height:48px;")
+                        
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
+
+    style.
+        * {
+          border-radius: 0 !important;
+        }

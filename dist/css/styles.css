@@ -10831,3 +10831,25 @@ textarea.form-control-lg {
 .py-5.bg-dark{
   background-color: #000 !important; /* Replace with your preferred color */
 }
+
+@media (max-width: 992px) {
+    .row.gx-4.gx-lg-5.align-items-center {
+        flex-direction: column-reverse;
+    }
+}
+
+
+h1 {
+line-height: 1.2;
+}
+
+p strong {
+color: #bfa046;
+}
+
+img.img-fluid {
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    object-fit: cover;
+    max-height: 700px;
+}
