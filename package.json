@@ -3,15 +3,16 @@
     "name": "startbootstrap-small-business",
     "version": "5.0.6",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
-    },
+    "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
+    "build:assets": "node scripts/build-assets.js",
+    "build:pug": "node scripts/build-pug.js",
+    "build:scripts": "node scripts/build-scripts.js",
+    "build:scss": "node scripts/build-scss.js",
+    "clean": "node scripts/clean.js",
+    "start": "serve -s dist -l 3000",
+    "dev": "npm run build && node scripts/start.js",
+    "start:debug": "npm run build && node scripts/start-debug.js"
+},
     "description": "A small business HTML template built with Bootstrap",
     "keywords": [
         "css",
@@ -39,6 +40,7 @@
         "bootstrap": "5.2.3"
     },
     "devDependencies": {
+        "@flydotio/dockerfile": "^0.7.10",
         "autoprefixer": "10.4.14",
         "browser-sync": "^3.0.4",
         "chokidar": "3.5.3",
