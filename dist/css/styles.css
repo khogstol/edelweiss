@@ -10824,3 +10824,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.brand-logo,
+.brand-text {
+    height: 3vh;        /* 5% of screen height */
+    max-height: 40px;  /* prevents it getting too big */
+    min-height: 25px;  /* prevents it getting too small */
+}
